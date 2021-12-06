@@ -611,7 +611,7 @@ section {
 }
 
 .footer .grid-wrapper .box a:hover i {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 .footer .credit {
@@ -622,6 +622,33 @@ section {
 
 .footer .credit span {
   text-transform: uppercase;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1001;
+  cursor: progress;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.loader img {
+  background-color: transparent;
+}
+
+.loader.active {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
 }
 
 @media (max-width: 1200px) {

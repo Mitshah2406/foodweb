@@ -42,3 +42,13 @@ hamburgerMenu.onclick = function(){
       },
     },
   });
+
+function loader() {
+  document.querySelector('#loader').classList.add('active');
+}
+
+function active() {
+  setInterval(loader,3000)
+}
+window.onload = active
+  
