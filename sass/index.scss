@@ -34,7 +34,7 @@ $white: #fff;
 }
 // --- utils ---
 section {
-  padding: 2rem 9%;
+  padding: 5rem 9%;
 }
 .btn {
   background-color: $black;
@@ -365,6 +365,7 @@ section {
 
 .reviews {
   .reviews-slider {
+    padding-bottom: 2rem;
     .swiper-wrapper {
       .slide {
         position: relative;
